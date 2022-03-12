@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt install xfce4-terminal
+sudo cp stworki /usr/bin
+sudo cp stworki-main /usr/bin
+sudo cp stworki-txt.png /usr/share/icons
+sudo cp stworki-txt.desktop /usr/share/applications
+sudo chmod +x /usr/bin/stworki
+sudo chmod +x /usr/bin/stworki-main
+sudo chmod +x /usr/share/applications/stworki-txt.desktop

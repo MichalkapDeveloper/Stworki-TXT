@@ -1,0 +1,205 @@
+#!/bin/bash
+clear
+rzz=1
+money=0
+sp="KTOŚ"
+stw () {
+  echo
+}
+sco () {
+  echo $sp''': Stworki cośtam-orki to najdawniejsze stworki. Przykład - Ja. (Zrzuca płaszcz, okazuje się, że to stworek Profesorek)
+          ___
+      ___/___\___
+       _/     \_
+     (-( o¿ o )-)
+       \  ~  /
+        \___/
+    _____/ \_____
+   |             |
+   |  |       |  |
+   |  |       |  |
+   \  |       |  /
+   C  |       |   Ɔ
+   UUUU       UUUU
+      |   |   |
+      |   |   |
+      |  | |  |
+     |  |   |  |
+     |  |   |  |
+    |  |     |  |
+   (___|*   *|___)
+  '''
+  sp="Stworek Profesorek"
+}
+stpi () {
+echo '''KTOŚ: Stworki pierwotniaczki to wyewoluowane pierwotniaki świata stworków, które przetrwały wymierania. Podam wam kilka przykładów.
+Spronk
+
+\ \ \ | / / /
+ \ \ \|/ / /__
+  \ \ | / /||
+   \ \|/ ////
+  (o)       )
+  |_________)
+
+
+Byl
+   ______
+  /      \
+  | (o)  |
+  |      |
+  |      |
+  \      |
+   =====/
+
+Ty-ty-ty-ty-ty-ty
+
+               \   |   /
+                \  |  /
+                 \ | /
+  ________________\|/
+ <________________(o)
+
+Hip
+
+ ________________
+<______________(o)'''
+}
+start () {
+  echo "Jesteś w swoim domku."
+  echo "1. 🢁"
+  echo "2. 🢃"
+  read -p "Wybierz opcję: " act
+  if [ $act == "1" ]; then
+    pk
+  else
+    if [ $act == "2" ]; then
+      if [ $rzz = 1 ]; then
+        pdr
+      else
+        pd
+      fi
+   fi
+  fi
+}
+zip () {
+  read money
+  echo "Ilość twoich pieniędzy to: "$money
+  sleep 2
+  clear
+}
+pk () {
+  echo "Jesteś w swoim pokoju."
+  echo "1. 🢃"
+  echo "2. Włącz komputer ✅"
+  read -p "Wybierz opcję: " act
+  if [ $act == "1" ]; then
+    start
+  else
+    k
+  fi
+}
+pdr () {
+  echo "Jesteś przed swoim domkiem. Obok ciebie siedzi zakapturzony ktoś."
+  echo
+  r1
+}
+r1 () {
+  rzz=0
+  echo $sp": Dzień dobry. Jak się nazywasz?"
+  read -p "TY: " name
+  echo $sp": Cześć "$name"."
+  echo
+  echo "Nagle przybiega twój kolega(niezły rym, co?)"
+  echo
+  echo $sp": Dzień dobry. A ty jak się nazywasz?"
+  read -p "KOLEGA: " name_kolega
+  echo $sp": Cześć "$name_kolega"."
+  echo $sp": Czy wiecie co to stworki?"
+  two=$name", "$name_kolega
+  echo $name_kolega": No... Nie za bardzo."
+  echo $name": Raczej coś miłego."
+  echo $sp": Acha. Czyli nie wiecie?"
+  echo $two": No nie."
+  echo $sp": A chcecie?"
+  echo $two": Tak."
+  echo $sp": Dobrze. Usiądzcie lepiej."
+  echo $sp''': Stworki mieszkją wszędzie, tylko większość ludzi ich nie dostrzega.
+Żyją w miastach, na łąkach, na wsi, w lesie i w wielu innych miejscach. Stworki dzielą się na 3 grupy.
+1. Stworki
+2. Stworki cośtam-orki
+3. Stworki-Pierwotniaczki
+O których checie się dowiedzieć więcej?'''
+  read act
+  if [ $act == "1" ]; then
+  echo
+  else
+    if [ $act == "2" ]; then
+    sco
+    else
+     if [ $act == "3" ]; then
+       stpi
+     else
+       echo "Nie ma takiego numeru. "$act 
+     fi
+    fi
+  fi
+  echo $sp": Papa."
+  echo
+  echo "Następnego dnia."
+  echo
+  pk
+}
+
+
+
+
+pd () {
+  echo "Jesteś przed swoim domkiem."
+}
+
+
+
+
+k () {
+clear
+echo '''
+██╗░░░░░██╗███╗░░██╗██╗░░░██╗██╗░░██╗
+██║░░░░░██║████╗░██║██║░░░██║╚██╗██╔╝
+██║░░░░░██║██╔██╗██║██║░░░██║░╚███╔╝░
+██║░░░░░██║██║╚████║██║░░░██║░██╔██╗░
+███████╗██║██║░╚███║╚██████╔╝██╔╝╚██╗
+╚══════╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝'''
+sleep 5
+clear
+echo "2. Wyłącz"
+read -p "Wybierz opcję: " act
+if [ $act == "10" ]; then
+    dev
+  else
+    if [ $act == "2" ]; then
+     clear
+     echo '''
+██╗░░░░░██╗███╗░░██╗██╗░░░██╗██╗░░██╗
+██║░░░░░██║████╗░██║██║░░░██║╚██╗██╔╝
+██║░░░░░██║██╔██╗██║██║░░░██║░╚███╔╝░
+██║░░░░░██║██║╚████║██║░░░██║░██╔██╗░
+███████╗██║██║░╚███║╚██████╔╝██╔╝╚██╗
+╚══════╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░╚═╝'''
+     sleep 3
+     clear
+     pk
+    fi
+  fi
+pk
+}
+dev () {
+  clear
+  echo "1. Zmień ilość pieniędzy"
+  read act
+  if [ $act == "1" ]; then
+    zip
+  fi
+}
+echo "𝗦𝖙𝝎ₒ𝚛𝚔ℹ"
+start

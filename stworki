@@ -1,0 +1,2 @@
+#!/bin/bash
+xfce4-terminal --command=stworki-main --title="Stworki Tekstowe" --zoom=2 -H  --hide-menubar --hide-toolbar --maximize --icon=/usr/share/icons/stworki-txt.png

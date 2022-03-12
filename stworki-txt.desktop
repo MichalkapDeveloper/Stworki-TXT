@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Stworki
+Comment=
+Icon=/usr/share/icons/stworki-txt.png
+Exec=stworki
+Actions=
+Categories=Games;
+StartupNotify=false
+Path=
+Terminal=false
